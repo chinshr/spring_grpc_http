@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.1.6.RELEASE</version>
+    <version>2.4.2</version>
     <relativePath/>
     <!-- lookup parent from repository -->
   </parent>
@@ -19,14 +19,18 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
 
-    <grpc.version>1.21.0</grpc.version>
-    <protobuf.version>3.7.1</protobuf.version>
+    <grpc.version>1.49.0</grpc.version>
+    <protobuf.version>3.21.9</protobuf.version>
     <protobufjavaformat.version>1.4</protobufjavaformat.version>
 
     <jwt.version>0.9.0</jwt.version>
     <mapstruct.version>1.2.0.Final</mapstruct.version>
 
     <http.version>4.5.9</http.version>
+
+    <protocCommand>protoc</protocCommand>
+
+    <lombok.version>1.18.22</lombok.version>
   </properties>
 
   <dependencies>
@@ -59,7 +63,7 @@
     <dependency>
       <groupId>io.github.lognet</groupId>
       <artifactId>grpc-spring-boot-starter</artifactId>
-      <version>3.3.0</version>
+      <version>4.8.1</version>
     </dependency>
 
     <dependency>
@@ -117,6 +121,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
     </dependency>
     <dependency>
       <groupId>org.mapstruct</groupId>
@@ -161,7 +166,6 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-autoconfigure</artifactId>
-      <version>2.1.6.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
